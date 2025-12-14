@@ -14,6 +14,7 @@ export default defineNuxtConfig({
   },
   extends: [
     '@friendlyinternet/nuxt-crouton',
+    '@friendlyinternet/nuxt-crouton-editor',
     '@friendlyinternet/nuxt-crouton-flow',
     './layers/thinkgraph',
     './layers/thinkgraph-app',

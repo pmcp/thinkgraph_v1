@@ -93,6 +93,9 @@ importers:
       '@friendlyinternet/nuxt-crouton':
         specifier: link:/Users/pmcp/Projects/nuxt-crouton/packages/nuxt-crouton
         version: link:../nuxt-crouton/packages/nuxt-crouton
+      '@friendlyinternet/nuxt-crouton-editor':
+        specifier: link:/Users/pmcp/Projects/nuxt-crouton/packages/nuxt-crouton-editor
+        version: link:../nuxt-crouton/packages/nuxt-crouton-editor
       '@friendlyinternet/nuxt-crouton-flow':
         specifier: link:/Users/pmcp/Projects/nuxt-crouton/packages/nuxt-crouton-flow
         version: link:../nuxt-crouton/packages/nuxt-crouton-flow

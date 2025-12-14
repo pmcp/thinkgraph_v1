@@ -28,17 +28,6 @@
 
       <template #sidebar>
       <div class="flex flex-col gap-4 p-1">
-
-        <UFormField label="Parent" name="parentId" class="not-last:pb-4">
-          <CroutonFormParentSelect
-            v-model="state.parentId"
-            collection="thinkgraphDecisions"
-            :current-id="state.id"
-            label="Parent"
-          />
-        </UFormField>
-      </div>
-      <div class="flex flex-col gap-4 p-1">
         <UFormField label="Status" name="status" class="not-last:pb-4">
           <UInput v-model="state.status" class="w-full" size="xl" />
         </UFormField>

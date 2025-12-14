@@ -48,16 +48,14 @@ definePageMeta({
   middleware: ['auth'],
 })
 
-const route = useRoute()
 const { items: decisions, pending } = await useCollectionQuery('thinkgraphDecisions')
+const { open } = useCrouton()
 
 function handleNodeClick(nodeId: string, data: Record<string, unknown>) {
-  // Single click - could show preview or do nothing
-  console.log('Node clicked:', nodeId, data)
+  open('update', 'thinkgraphDecisions', [nodeId])
 }
 
 function handleNodeDblClick(nodeId: string, data: Record<string, unknown>) {
-  // Double click - navigate to edit page
-  navigateTo(`/dashboard/${route.params.team}/decisions/${nodeId}`)
+  open('update', 'thinkgraphDecisions', [nodeId])
 }
 </script>

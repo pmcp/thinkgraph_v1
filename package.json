@@ -45,6 +45,7 @@
   },
   "devDependencies": {
     "@friendlyinternet/nuxt-crouton": "link:/Users/pmcp/Projects/nuxt-crouton/packages/nuxt-crouton",
+    "@friendlyinternet/nuxt-crouton-editor": "link:/Users/pmcp/Projects/nuxt-crouton/packages/nuxt-crouton-editor",
     "@friendlyinternet/nuxt-crouton-flow": "link:/Users/pmcp/Projects/nuxt-crouton/packages/nuxt-crouton-flow",
     "@tailwindcss/typography": "^0.5.16",
     "@vueuse/core": "^13.3.0",
