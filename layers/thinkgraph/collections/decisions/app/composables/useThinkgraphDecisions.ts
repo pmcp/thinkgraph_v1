@@ -3,11 +3,11 @@ import { z } from 'zod'
 export const thinkgraphDecisionSchema = z.object({
   title: z.string().min(1, 'title is required'),
   description: z.string().optional(),
-  status: z.array(z.string()).optional(),
+  status: z.string().nullable().optional(),
   parentId: z.string().nullable().optional(),
   position: z.record(z.any()).optional(),
-  dueDate: z.date().optional(),
-  priority: z.array(z.string()).optional(),
+  dueDate: z.date().nullable().optional(),
+  priority: z.string().nullable().optional(),
   outcome: z.string().optional(),
 })
 
