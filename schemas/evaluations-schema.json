@@ -1,0 +1,45 @@
+{
+  "decisionId": {
+    "type": "string",
+    "meta": {
+      "required": true,
+      "label": "Decision",
+      "refTarget": "decisions",
+      "area": "meta"
+    }
+  },
+  "optionId": {
+    "type": "string",
+    "meta": {
+      "required": true,
+      "label": "Option",
+      "refTarget": "options",
+      "area": "main"
+    }
+  },
+  "criteriaId": {
+    "type": "string",
+    "meta": {
+      "required": true,
+      "label": "Criterion",
+      "refTarget": "criteria",
+      "area": "main"
+    }
+  },
+  "score": {
+    "type": "number",
+    "meta": {
+      "required": true,
+      "label": "Score",
+      "description": "1-10 rating",
+      "area": "main"
+    }
+  },
+  "notes": {
+    "type": "text",
+    "meta": {
+      "label": "Notes",
+      "area": "main"
+    }
+  }
+}

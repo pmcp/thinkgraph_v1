@@ -2,6 +2,22 @@ import './env'
 import vue from '@vitejs/plugin-vue'
 
 export default defineNuxtConfig({
+  vite: {
+    server: {
+      fs: {
+        allow: [
+          // Allow access to linked nuxt-crouton monorepo
+          '/Users/pmcp/Projects/nuxt-crouton',
+        ],
+      },
+    },
+  },
+  extends: [
+    '@friendlyinternet/nuxt-crouton',
+    '@friendlyinternet/nuxt-crouton-flow',
+    './layers/thinkgraph',
+    './layers/thinkgraph-app',
+  ],
   modules: [
     '@nuxthub/core',
     '@nuxt/ui',
@@ -27,8 +43,7 @@ export default defineNuxtConfig({
       host: process.env.BASE_URL,
     },
   },
-  future: { compatibilityVersion: 4 },
-  compatibilityDate: '2024-07-30',
+  compatibilityDate: '2024-12-14',
   nitro: {
     rollupConfig: {
       // @ts-expect-error - Rollup plugin type definitions are incomplete for vue plugin

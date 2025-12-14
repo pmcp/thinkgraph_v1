@@ -1,0 +1,42 @@
+{
+  "decisionId": {
+    "type": "string",
+    "meta": {
+      "required": true,
+      "label": "Decision",
+      "refTarget": "decisions",
+      "area": "meta"
+    }
+  },
+  "title": {
+    "type": "string",
+    "meta": {
+      "required": true,
+      "label": "Criterion Name",
+      "placeholder": "e.g., Cost, Performance, Ease of use",
+      "area": "main"
+    }
+  },
+  "description": {
+    "type": "text",
+    "meta": {
+      "label": "Description",
+      "area": "main"
+    }
+  },
+  "weight": {
+    "type": "number",
+    "meta": {
+      "label": "Weight (Importance)",
+      "description": "1-10, higher = more important",
+      "area": "sidebar"
+    }
+  },
+  "order": {
+    "type": "number",
+    "meta": {
+      "label": "Display Order",
+      "area": "meta"
+    }
+  }
+}

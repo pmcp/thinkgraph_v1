@@ -1,0 +1,36 @@
+{
+  "entityType": {
+    "type": "string",
+    "meta": {
+      "required": true,
+      "label": "Entity Type",
+      "description": "decision, option, or criteria",
+      "area": "meta"
+    }
+  },
+  "entityId": {
+    "type": "string",
+    "meta": {
+      "required": true,
+      "label": "Entity ID",
+      "area": "meta"
+    }
+  },
+  "content": {
+    "type": "text",
+    "meta": {
+      "required": true,
+      "label": "Note Content",
+      "component": "EditorSimple",
+      "area": "main"
+    }
+  },
+  "type": {
+    "type": "string",
+    "meta": {
+      "label": "Note Type",
+      "displayAs": "slotButtonGroup",
+      "area": "sidebar"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "decisionId": {
+    "type": "string",
+    "meta": {
+      "required": true,
+      "label": "Decision",
+      "refTarget": "decisions",
+      "area": "meta"
+    }
+  },
+  "title": {
+    "type": "string",
+    "meta": {
+      "required": true,
+      "label": "Option Title",
+      "placeholder": "Name this option",
+      "area": "main"
+    }
+  },
+  "description": {
+    "type": "text",
+    "meta": {
+      "label": "Description",
+      "component": "EditorSimple",
+      "area": "main"
+    }
+  },
+  "pros": {
+    "type": "repeater",
+    "meta": {
+      "label": "Pros",
+      "area": "main"
+    }
+  },
+  "cons": {
+    "type": "repeater",
+    "meta": {
+      "label": "Cons",
+      "area": "main"
+    }
+  },
+  "order": {
+    "type": "number",
+    "meta": {
+      "label": "Display Order",
+      "area": "meta"
+    }
+  }
+}

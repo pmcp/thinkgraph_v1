@@ -1,0 +1,58 @@
+{
+  "title": {
+    "type": "string",
+    "meta": {
+      "required": true,
+      "label": "Title",
+      "placeholder": "What decision are you making?",
+      "area": "main"
+    }
+  },
+  "description": {
+    "type": "text",
+    "meta": {
+      "label": "Description",
+      "component": "EditorSimple",
+      "area": "main"
+    }
+  },
+  "status": {
+    "type": "string",
+    "meta": {
+      "label": "Status",
+      "displayAs": "slotButtonGroup",
+      "area": "sidebar"
+    }
+  },
+  "position": {
+    "type": "json",
+    "meta": {
+      "label": "Flow Position",
+      "area": "meta"
+    }
+  },
+  "dueDate": {
+    "type": "date",
+    "meta": {
+      "label": "Due Date",
+      "area": "sidebar"
+    }
+  },
+  "priority": {
+    "type": "string",
+    "meta": {
+      "label": "Priority",
+      "displayAs": "slotButtonGroup",
+      "area": "sidebar"
+    }
+  },
+  "outcome": {
+    "type": "string",
+    "meta": {
+      "label": "Selected Option",
+      "refTarget": "options",
+      "area": "sidebar",
+      "description": "The chosen option after evaluation"
+    }
+  }
+}

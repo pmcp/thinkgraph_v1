@@ -15,9 +15,10 @@
     "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
+    "@dagrejs/dagre": "^1.1.8",
     "@iconify-json/lucide": "^1.2.45",
     "@nuxt/eslint": "^1.4.1",
-    "@nuxt/ui": "3.1.3",
+    "@nuxt/ui": "^4.0.0",
     "@nuxthub/core": "^0.8.27",
     "@simplewebauthn/browser": "^13.1.0",
     "@simplewebauthn/server": "^13.1.1",
@@ -26,10 +27,14 @@
     "@vitejs/plugin-vue": "^5.2.4",
     "@vue-email/components": "^0.0.21",
     "@vue-email/render": "^0.0.9",
+    "@vue-flow/background": "^1.3.2",
+    "@vue-flow/controls": "^1.1.3",
+    "@vue-flow/core": "^1.48.0",
+    "@vue-flow/minimap": "^1.5.4",
     "drizzle-orm": "0.44.1",
     "drizzle-zod": "^0.8.2",
     "nanoid": "5.1.5",
-    "nuxt": "^3.17.4",
+    "nuxt": "^4.0.0",
     "nuxt-auth-utils": "0.5.20",
     "resend": "4.5.1",
     "stripe": "18.2.0",
@@ -39,6 +44,8 @@
     "zod": "^3.25.48"
   },
   "devDependencies": {
+    "@friendlyinternet/nuxt-crouton": "link:/Users/pmcp/Projects/nuxt-crouton/packages/nuxt-crouton",
+    "@friendlyinternet/nuxt-crouton-flow": "link:/Users/pmcp/Projects/nuxt-crouton/packages/nuxt-crouton-flow",
     "@tailwindcss/typography": "^0.5.16",
     "@vueuse/core": "^13.3.0",
     "@vueuse/nuxt": "13.3.0",
