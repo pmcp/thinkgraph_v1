@@ -60,7 +60,7 @@ const tabs = ref(false)
 const { create, update, deleteItems } = useCollectionMutation(collection)
 
 // useCrouton still manages modal state
-const { close } = useCrouton()
+const { close, loading } = useCrouton()
 
 // Initialize form state with proper values (no watch needed!)
 const initialValues = props.action === 'update' && props.activeItem?.id
