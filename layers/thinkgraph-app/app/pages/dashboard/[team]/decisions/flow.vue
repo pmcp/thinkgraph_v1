@@ -30,6 +30,8 @@
             nodeSpacing: 80,
             rankSpacing: 120
           }"
+          sync
+          :flow-id="`decisions-${team}`"
           class="w-full h-full"
           @node-click="handleNodeClick"
           @node-dbl-click="handleNodeDblClick"
@@ -56,6 +58,8 @@ definePageMeta({
   middleware: ['auth'],
 })
 
+const route = useRoute()
+const team = route.params.team as string
 const { items: decisions, pending } = await useCollectionQuery('thinkgraphDecisions')
 const { open } = useCrouton()
 

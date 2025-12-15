@@ -57,7 +57,7 @@
     "dotenv": "^16.5.0",
     "drizzle-kit": "0.31.1",
     "jsonc-eslint-parser": "^2.4.0",
-    "nuxi": "^3.25.1",
+    "nuxi": "^3.31.2",
     "nuxthub-ratelimit": "^1.0.4",
     "simple-git-hooks": "^2.13.0",
     "typescript": "^5.8.3",

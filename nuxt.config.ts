@@ -52,6 +52,7 @@ export default defineNuxtConfig({
     },
     experimental: {
       tasks: true,
+      websocket: true,
     },
   },
   hub: {
